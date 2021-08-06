@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="style.css" />
+			<title>Formulaire</title>
+			<script src="script.js" defer></script>
+</head>
+<body>
+
+
+    <div class="container">
+        <form method="post" onsubmit="compare(event)">
+            <div class="form-group">
+                <label for="name" class="form-label">Nom :</label>
+                <input type="text" class="form-control" name="prenom" id="nom" placeholder="Entrez votre nom..." tabindex="1" required>
+        </div>
+		<div class="form-group">
+			<label for="name" class="form-label">Prénom :</label>
+			<input type="text" class="form-control" name="prenom" id="prenom" placeholder="Entrez votre prénom..." tabindex="2" required>
+	</div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email :</label>
+                <input  type="email" class="form-control" name="email" id="email" placeholder="Entrez votre email..." tabindex="3" required>
+        </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Confirmation Email :</label>
+                <input  type="email" class="form-control" name="confirmation-email" id="conf-email" placeholder="Confirmez votre email..." required>
+        </div>
+		<p id="errormail"></p>
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject :</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Définisser votre sujet..." tabindex="4" required>
+        </div>
+            <div class="form-group">
+                <label for="" class="form-label">Message :</label>
+                <textarea class="form-control" name="message" id="message" placeholder="Entrez votre message..." tabindex="5" rows="5"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="btn"  value="Envoyer">Send Message!</button>
+			<span></span>
+        </div>
+        </form>
+    </div>
+
+</body>
+</html>
